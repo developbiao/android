@@ -1,0 +1,129 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (javaClasses.cpp:129), pid=7640, tid=7960
+#  fatal error: Invalid layout of preloaded class
+#
+# JRE version: 7.0_25-b17
+# Java VM: Java HotSpot(TM) Client VM (23.25-b01 mixed mode windows-x86 )
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0118b000):  JavaThread "Unknown thread" [_thread_in_vm, id=7960, stack(0x01110000,0x01160000)]
+
+Stack: [0x01110000,0x01160000],  sp=0x0115f6a4,  free space=317k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x167e31]
+V  [jvm.dll+0x1620f6]
+V  [jvm.dll+0x1f92f]
+V  [jvm.dll+0x1f9b6]
+V  [jvm.dll+0x2cffd]
+V  [jvm.dll+0x2d2a9]
+V  [jvm.dll+0x75351]
+V  [jvm.dll+0x7570b]
+V  [jvm.dll+0x123881]
+V  [jvm.dll+0x1439cc]
+V  [jvm.dll+0xa619f]
+C  [javaw.exe+0x13ca]
+C  [javaw.exe+0x1e3c]
+C  [javaw.exe+0xa5b1]
+C  [javaw.exe+0xa63b]
+C  [KERNEL32.DLL+0x1866]  BaseThreadInitThunk+0x12
+C  [ntdll.dll+0x368f1]  LdrInitializeThunk+0x1a3
+C  [ntdll.dll+0x3689d]  LdrInitializeThunk+0x14f
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0118b000 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=7960, stack(0x01110000,0x01160000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.010 loading class 0x01504c10 done
+Event: 0.010 loading class 0x014e5b38 done
+Event: 0.010 loading class 0x014e57c8
+Event: 0.010 loading class 0x01507410
+Event: 0.010 loading class 0x01507410 done
+Event: 0.010 loading class 0x015078e0
+Event: 0.010 loading class 0x015078e0 done
+Event: 0.010 loading class 0x01514780
+Event: 0.010 loading class 0x01514780 done
+Event: 0.010 loading class 0x014e57c8 done
+
+
+Dynamic libraries:
+0x011d0000 - 0x011ff000 	E:\Program Files\Java\jdk1.7.0_25\bin\javaw.exe
+0x777b0000 - 0x77917000 	C:\Windows\SYSTEM32\ntdll.dll
+0x76030000 - 0x76128000 	C:\Windows\system32\KERNEL32.DLL
+0x74f00000 - 0x74fbd000 	C:\Windows\system32\KERNELBASE.dll
+0x762b0000 - 0x7635e000 	C:\Windows\system32\ADVAPI32.dll
+0x752a0000 - 0x753c1000 	C:\Windows\system32\USER32.dll
+0x73110000 - 0x73307000 	C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.9200.16384_none_893961408605e985\COMCTL32.dll
+0x75c30000 - 0x75ce1000 	C:\Windows\system32\msvcrt.dll
+0x753d0000 - 0x75404000 	C:\Windows\SYSTEM32\sechost.dll
+0x757f0000 - 0x758c2000 	C:\Windows\system32\RPCRT4.dll
+0x75410000 - 0x7551a000 	C:\Windows\system32\GDI32.dll
+0x75ba0000 - 0x75bcb000 	C:\Windows\system32\IMM32.DLL
+0x75990000 - 0x75a6c000 	C:\Windows\system32\MSCTF.dll
+0x59ce0000 - 0x59d9e000 	E:\Program Files\Java\jdk1.7.0_25\jre\bin\msvcr100.dll
+0x58400000 - 0x58742000 	E:\Program Files\Java\jdk1.7.0_25\jre\bin\client\jvm.dll
+0x72af0000 - 0x72af8000 	C:\Windows\SYSTEM32\WSOCK32.dll
+0x72330000 - 0x72351000 	C:\Windows\SYSTEM32\WINMM.dll
+0x77450000 - 0x77456000 	C:\Windows\system32\PSAPI.DLL
+0x75fe0000 - 0x76030000 	C:\Windows\system32\WS2_32.dll
+0x72300000 - 0x7232a000 	C:\Windows\SYSTEM32\WINMMBASE.dll
+0x75290000 - 0x75298000 	C:\Windows\system32\NSI.dll
+0x67d70000 - 0x67d7c000 	E:\Program Files\Java\jdk1.7.0_25\jre\bin\verify.dll
+0x677a0000 - 0x677c0000 	E:\Program Files\Java\jdk1.7.0_25\jre\bin\java.dll
+0x67400000 - 0x67413000 	E:\Program Files\Java\jdk1.7.0_25\jre\bin\zip.dll
+0x6f220000 - 0x6f349000 	C:\Windows\SYSTEM32\dbghelp.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=GBK -Xbootclasspath:D:\SOFTWARE\Develop\eclipse\adt-bundle-windows-x86-20131030\sdk\platforms\android-10\android.jar 
+java_command: com.learn.test.TestCalcService
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=E:\Program Files\Java\jdk1.7.0_25
+CLASSPATH=.;C:\Program Files\Java\jre7\lib\ext\QTJava.zip
+PATH=E:/Program Files/Java/jdk1.7.0_25/bin/../jre/bin/client;E:/Program Files/Java/jdk1.7.0_25/bin/../jre/bin;E:/Program Files/Java/jdk1.7.0_25/bin/../jre/lib/i386;E:\Program Files\Java\jdk1.7.0_25\bin;C:\Program Files\Common Files\Intel\PCSDK\contrib\Total Immersion\bin\win32;C:\Program Files\Common Files\Intel\PCSDK\bin\win32;C:\Program Files\AMD APP\bin\x86;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;E:\Program Files\Windows7Master;C:\Program Files\Lenovo\Access Connections\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;C:\Program Files\ATI Technologies\ATI.ACE\Core-Static;E:\Program Files\QuickTime\QTSystem\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\VSShell\Common7\IDE\;C:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE\PrivateAssemblies\;E:\Program Files\nodejs\;D:\SOFTWARE\Develop\eclipse\adt-bundle-windows-x86-20131030\sdk\platform-tools;C:\Users\Administrator\AppData\Roaming\npm;D:\SOFTWARE\Develop\eclipse\adt-bundle-windows-x86-20131030\eclipse;
+USERNAME=GONGBIAO
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 6 Model 37 Stepping 5, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 8 Build 9200 
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 37 stepping 5, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, ht, tsc, tscinvbit
+
+Memory: 4k page, physical 3133988k(2146668k free), swap 4444708k(1410640k free)
+
+vm_info: Java HotSpot(TM) Client VM (23.25-b01) for windows-x86 JRE (1.7.0_25-b17), built on Jun 21 2013 13:06:48 by "java_re" with unknown MS VC++:1600
+
+time: Sat May 03 19:17:15 2014
+elapsed time: 0 seconds
+
